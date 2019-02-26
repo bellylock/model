@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/shop_car - vue.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/shop_car-vue.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="left">
+            <span>xiaoxiao321</span>
+            <a href="#">安全退出</a>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">商城首页</a></li>
+                <li><a href="#">个人中心</a></li>
+                <li><a href="#">帮助</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="title">
+    <div class="container">
+        <div class="search row">
+            <div class="col-md-2">
+                <img class="img1" src="images/logo.png">
+            </div>
+            <div class="col-md-10 c10">
+                <input type="text"/>
+                <button class="btn"><img class="imgsearch" src="images/search.png"></button>
+                <ul class="ul">
+                    <li><a href="#">床</a></li>
+                    <li><a href="#">沙发</a></li>
+                    <li><a href="#">餐桌椅</a></li>
+                    <li><a href="#">实木床</a></li>
+                    <li><a href="#">转角沙发</a></li>
+                    <li><a href="#">书柜</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 c12">
+                <a href="#">我的购物车</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content" id="app">
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th class="first">
+                    <div :class="{duigou : allCheck}" @click="allCheckClick()">
+                        <span class="kuang"></span> <span class="span">全选</span>
+                    </div>
+                </th>
+                <th class="on">商品名称</th>
+                <th>单价</th>
+                <th class="on">数量</th>
+                <th>金额</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="item in list">
+                <td>
+                    <div class="picked" :class="{duigou : item.check}" @click="itemCheck(item)">
+                        <span class="kuang"></span>
+                    </div>
+                </td>
+                <td class="second">
+                    <img :src="item.img">
+                    <div class="top">{{item.p}}</div>
+                    <div class="down">{{item.span}}</div>
+                </td>
+                <td v-once>{{item.price}}</td>
+                <td class="menu">
+                    <button @click="sub(item)">-</button>
+                    <input type="text" v-model="item.number" @input="inputNumber(item)">
+                    <button @click="plus(item)">+</button>
+                </td>
+                <td>{{item.price * item.number}}</td>
+                <td><img class="delete" src="images/delete.png" @click="deleteClick(item)"></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="bottom">
+            <div class="left" v-bind:class="list">
+                <span class="kuang" :class="{duigou:allCheck}" @click="allCheckClick()"></span>
+                <div class="box">
+                    <span class="span">全选</span>
+                    <a class="first" href="###">继续购物</a>
+                    <a id="clear" @click="clearClick()" href="###">清空选中商品</a>
+                </div>
+            </div>
+            <div class="right">
+                <span>共<i id="count">{{count}}</i>件商品</span>
+                <span>商品应付总额：</span> <em>￥<i id="totalPrice">{{totalPrice}}</i></em>
+                <button>去结算</button>
+            </div>
+        </div>
+        <div class="page">
+            <nav aria-label="Page navigation">
+                <ul class="">
+                    <li class="prev">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo; 上一页</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li class="on"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">···</a></li>
+                    <li><a href="#">16</a></li>
+                    <li class="next">
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">下一页 &raquo;</span>
+                        </a>
+                    </li>
+                    <li class="last">跳转 <input type="text"> 页 <a href="">确定</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="guess">
+            <div class="top">
+                <span class="left">猜你喜欢</span>
+                <a class="right" href="#"><img src="images/change.png"> 换一批</a>
+            </div>
+            <div class="matter">
+                <ul>
+                    <li>
+                        <a href="#"><img class="img" src="images/guess-1.jpg"></a>
+                        <span class="price">￥8869</span>
+                        <p>圣蒂斯堡地中海全实木布艺沙发客厅小户型小清新田园三人</p>
+                        <p>沙发组合</p>
+                        <span class="sail">已售</span>
+                        <i class="num">3578</i>
+                        <em class="pin">评论86</em>
+                        <div class="detail">
+                            <ul>
+                                <li>
+                                    <span class="fang" index="0"></span> 对比
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/shoucang.png"></a> <a href="#">收藏</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/car-1.png"></a> <a class="join" href="#">加入购物车</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="img" src="images/guess-2.jpg"></a>
+                        <span class="price">￥1720</span>
+                        <p>诗雅轩 韩式田园布艺沙发组合 小户型客厅家具 可拆洗转角</p>
+                        <p>HG780</p>
+                        <span class="sail">已售</span>
+                        <i class="num">2585</i>
+                        <em class="pin">评论67</em>
+                        <div class="detail">
+                            <ul>
+                                <li>
+                                    <span class="fang" index="1"></span> 对比
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/shoucang.png"></a> <a href="#">收藏</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/car-1.png"></a> <a class="join" href="#">加入购物车</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="img" src="images/guess-3.jpg"></a>
+                        <span class="price">￥8869</span>
+                        <p>浪漫坊 田园布艺沙发实木地中海风格沙发 小户型布艺沙发</p>
+                        <p>组合预售</p>
+                        <span class="sail">已售</span>
+                        <i class="num">6840</i>
+                        <em class="pin">评论106</em>
+                        <div class="detail">
+                            <ul>
+                                <li>
+                                    <span class="fang" index="2"></span> 对比
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/shoucang.png"></a> <a href="#">收藏</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/car-1.png"></a> <a class="join" href="#">加入购物车</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact">
+            <ul>
+                <li>
+                    <p>客服热线（24小时）</p>
+                    <span>400-820-8820</span>
+                    <p>QQ客服（24小时）</p>
+                    <span>8083159246</span>
+                </li>
+                <li>
+                    <i>关于诺贝思</i>
+                    <a href="#">公司简介</a>
+                    <a href="#">媒体新闻</a>
+                    <a href="#">线下体验馆</a>
+                    <a href="#">联系我们</a>
+                    <a href="#">诺贝思O2O</a>
+                </li>
+                <li>
+                    <i>购物指南</i>
+                    <a href="#">导购演示</a>
+                    <a href="#">订单操作</a>
+                    <a href="#">会员注册</a>
+                    <a href="#">账户管理</a>
+                    <a href="#">收货样品</a>
+                    <a href="#">会员等级</a>
+                </li>
+                <li>
+                    <i>配送安装</i>
+                    <a href="#">收货指南</a>
+                    <a href="#">物流配送</a>
+                    <a href="#">安装服务</a>
+                    <a href="#">体验馆服务器</a>
+                </li>
+                <li>
+                    <i>售后服务</i>
+                    <a href="#">7天无理由退货服务</a>
+                    <a href="#">如何申请退款</a>
+                    <a href="#">维修补见说明</a>
+                    <a href="#">贵就赔</a>
+                </li>
+                <li>
+                    <i>服务保障</i>
+                    <a href="#">正品保障</a>
+                    <a href="#">隐私保护</a>
+                    <a href="#">注册协议</a>
+                    <a href="#">免费申明</a>
+                </li>
+                <li>
+                    <p>官方微信</p>
+                    <a href="#"><img src="images/icon.jpg"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="top">
+            <ul class="top-side">
+                <li>热门城市：</li>
+                <li><a href="#">北京家具</a></li>
+                <li><a href="#">上海家具</a></li>
+                <li><a href="#">广州家具</a></li>
+                <li><a href="#">深圳家具</a></li>
+                <li><a href="#">佛山家具</a></li>
+                <li><a href="#">江门家具</a></li>
+                <li><a href="#">天津家具</a></li>
+                <li><a href="#">杭州家具</a></li>
+                <li><a href="#">西安家具</a></li>
+                <li><a href="#">重庆家具</a></li>
+                <li><a href="#">汕头家具</a></li>
+            </ul>
+            <ul>
+                <li>友情链接：</li>
+                <li><a href="#">广州家居网</a></li>
+                <li><a href="#">江门家具城</a></li>
+                <li><a href="#">地产中国网</a></li>
+                <li><a href="#">广州装潢网</a></li>
+                <li><a href="#">广州淘房屋</a></li>
+                <li><a href="#">房屋装修效果图</a></li>
+                <li><a href="#">江门装潢网</a></li>
+                <li><a href="#">深圳旅行社</a></li>
+                <li><a href="#">广州人才网</a></li>
+                <li><a href="#">广州短租公寓</a></li>
+                <li><a href="#">广州旅行社</a></li>
+            </ul>
+        </div>
+        <div class="down">
+            <ul>
+                <li><a href="#">装修效果图</a></li>
+                <li><a href="#">家具图片</a></li>
+                <li><a href="#">家具资讯</a></li>
+                <li><a href="#">生活百科</a></li>
+                <li><a href="#">家私导购</a></li>
+                <li><a href="#">品牌展厅</a></li>
+                <li><a href="#">装修论坛</a></li>
+                <li><a href="#">客服中心</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">友情链接</a></li>
+                <li><a href="#">更多</a></li>
+            </ul>
+            <p>copyright@2013-2017Nuobeisi mail诺贝思商城版权所有 ICP备案证书号：粤ICP备08008384号</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

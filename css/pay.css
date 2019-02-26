@@ -1,0 +1,76 @@
+.header {background:#f2f2f2;}
+.header .left{width: 200px;float: left;    margin-top: 5px;}
+.header .left span{font-size: 12px;color: #dc0201;}
+.header .left a{font-size: 12px;color: #666;text-decoration: none;}
+.header .right{overflow: hidden;width: 220px;float: right;}
+.header .right ul{overflow: hidden;float: right;    margin-top: 5px;margin-bottom: 5px;}
+.header .right ul li{float: left;list-style: none;margin-left: 10px;}
+.header .right ul li a{text-decoration: none;color: #666;font-size: 12px;}
+.content .title{margin-top: 30px;}
+.content .c2{float: left;}
+.content .c8{float: right;padding-left: 128px;}
+.content h2{font-size: 24px;color: #666;margin-top: 32px;}
+.content .amount{border: 1px solid #ccc;margin-right: 0;margin-left: 0; height: 137px; margin-top: 25px;}
+.content .amount span{font-size: 14px;color: #666;}
+.content .amount i{font-size: 24px;color: #dc0210;font-style: normal;}
+.content .amount .c3{padding-top:50px;}
+.content .amount .c9 .left{ margin-top: 19px; border-left: 1px solid #ccc;  }
+.content .amount .c9 .left p:nth-child(2){margin-top: 51px;}
+.content .amount .c9 .right p{margin-bottom: 3px;}
+.content .amount .c9 .right p:nth-child(1){margin-top: 20px;}
+.content h3{font-size: 24px;color: #666;margin-top: 32px;}
+.content .payway{ margin-top: 25px;}
+.content .payway .line{display: block; margin-left: 40px; margin-top: -25px;}
+.content .payway .pay{display: block; margin-left: 40px; margin-top: -22px;}
+.content .payway .last{/*display: block;*/ /*margin-left: 40px; margin-top: -22px;*/}
+.content .payway .head{border: 1px solid #ccc;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;}
+.content .payway .head .box .img{border: 1px solid #ccc;margin-left: 10px; }
+.content .payway .box .circle{width: 14px;height: 14px; border-radius: 7px;
+	display: inline-block; background-color: #ccc;}
+.content .payway .head .box{width: 252px;}
+.round{background: url(../images/round-1.png) no-repeat; background-position: 3px 3px;}
+.content .payway .title .circle{width: 14px;height: 14px; border-radius: 7px;
+	display: inline-block; background-color: #ccc;margin-right: 10px;}
+.content .payway .title .circled{width: 14px;height: 14px; border-radius: 7px;
+	display: inline-block; background-color: #ccc;margin-right: 10px;}
+.content .payway .title{padding-left: 11px;}
+.content .payway .title ul{overflow: hidden;}
+.content .payway .title ul li{list-style: none; float: left;border: 1px solid #ccc;padding: 5px 5px;
+	margin-top: 15px;margin-right: 20px;width: 251px;padding-left: 15px;}
+.content .payway .body{margin-top: -1px;border: 1px solid #ccc;}
+.content .payway .body:hover{border-color: #dc0210;}
+.content .payway .foot{border: 1px solid #ccc;line-height: 23px;border-top: none; padding-bottom: 8px;}
+.content .payway .foot .circle{width: 14px;height: 14px; border-radius: 7px; margin-top: 10px;
+	display: inline-block; background-color: #ccc;margin-right: 10px; margin-left: 12px;}
+.content .payway .foot .box{width: 100px;}
+.content .payway .paynow{float: right;margin-top: 15px;margin-bottom: 20px;}
+.content .payway .paynow button{background-color: #dc0201;color: white;font-size: 24px;padding: 10px 20px;
+border: none;}
+.content .payway .paynow button:focus{outline: none;}
+/*.active{background: url(../images/round-1.png) no-repeat; background-position: 3px 3px;}*/
+
+.content .contact{overflow: hidden; margin-top: 15px;margin-bottom: 50px;}
+.content .contact ul{overflow: hidden;    margin-left: -15px;}
+.content .contact ul li{float: left;list-style:none;margin-top: 11px;margin-left:71px;}
+.content .contact ul li:nth-child(1){margin-top: 0;margin-left: 0;}
+.content .contact ul li:nth-child(7){margin-left: 154px;margin-top: -10px;text-align: center;}
+.content .contact ul li p{font-size: 16px ;color: #666; margin-top: 10px;}
+.content .contact ul li span{font-size: 18px;color: #dc0201;}
+.content .contact ul li i{font-size: 14px; color: #666;font-style: normal;display: block;}
+.content .contact ul li a{text-decoration: none;font-size: 12px;color: #999;display: block;margin-top: 6px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

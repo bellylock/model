@@ -1,0 +1,26 @@
+[
+	{
+		"img" :"images/housee.png",
+		"a" :"卧室家具"
+	},
+	{
+		"img":"images/sofa.png",
+		"a":"客厅家具"
+	},
+	{
+		"img":"images/cup.png",
+		"a":"餐厅家具"
+	},
+	{
+		"img":"images/book.png",
+		"a":"书房家具"
+	},
+	{
+		"img":"images/bed.png",
+		"a":"儿童家具"
+	},
+	{
+		"img":"images/outdoor.png",
+		"a":"户外/办公"
+	}
+]

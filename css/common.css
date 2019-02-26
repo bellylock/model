@@ -1,0 +1,11 @@
+
+
+
+.footer{background-color: #1f1f1f;padding-bottom: 15px;}
+.footer ul{overflow: hidden;  margin-left: -48px; }
+.footer ul li{float: left;list-style: none;margin-left: 10px;color:#666;font-size: 12px;}
+.footer ul li a{color:#666;font-size: 12px;text-decoration: none;}
+.footer .top{padding-bottom: 15px;border-bottom: 1px solid #666;margin-left: 20px;}
+.footer .top-side{margin-top: 25px;}
+.footer .down{margin-top: 15px;margin-left: 20px;}
+.footer .down p{font-size: 12px;color: #666;}

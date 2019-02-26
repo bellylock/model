@@ -1,0 +1,133 @@
+.header {background:#f2f2f2;}
+.header .left{width: 200px;float: left;    margin-top: 5px;}
+.header .left span{font-size: 12px;color: #dc0201;}
+.header .left a{font-size: 12px;color: #666;text-decoration: none;}
+.header .right{overflow: hidden;width: 220px;float: right;}
+.header .right ul{overflow: hidden;float: right;    margin-top: 5px;margin-bottom: 5px;}
+.header .right ul li{float: left;list-style: none;margin-left: 10px;}
+.header .right ul li a{text-decoration: none;color: #666;font-size: 12px;}
+
+.title .img1{margin-top: 10px;}
+.title .search .c10>ul{overflow: hidden;    margin-left: -39px;}
+.title .search .c10>ul>li{list-style: none;float: left;margin-right: 15px;}
+.title .search .c10>ul>li:nth-child(1) a{border: none;padding-left: 0;}
+.title .search .c10>ul>li>a{font-size: 14px;color: #999;text-decoration: none;border-left: 2px solid #ccc;
+	padding-left: 15px;}
+.title .c10{ padding-left: 360px;margin-top: 25px;}
+.title input{width: 521px;height: 60px;border: 1px solid red;padding-left: 8px;}
+.title input:focus{outline: 0;}
+.title .c10 .btn{width: 77px; height: 60px; border-radius: 0;margin-left: -4px; margin-top: -3px;
+ background-color: red;}
+.title .c10 .btn:focus{outline: none;}
+.title .c12{border-bottom: 1px solid #dc0201;width: 97%; margin-left: 18px; padding-bottom: 2px;}
+.title .c12 a{font-size: 18px;color: white;background-color: #dc0201;padding: 5px 10px;text-decoration: none;
+margin-left: -15px;}
+.kuang{width: 20px;height: 20px;border: 1px solid #ccc;display: inline-block;}
+.allCheck{width: 20px;height: 20px;border: 1px solid #ccc;display: inline-block;}
+.content .table{margin-top: 15px;}
+.content .table tr th.on{padding-left: 8%;}
+.content .table tr th .span{display: block; margin-top: -25px; margin-left: 25px;}
+.content .table tr th.first{width: 71px;}
+.content .table tr td.second{width: 450px;}
+.content .table tr td.second .top{margin-top: -78px; margin-left: 86px;}
+.content .table tr td.second .down{margin-top: 11px; margin-left: 86px;    margin-bottom: 8px;}
+/*.content .table tr td .kuang{margin-top: 30px;}*/
+.content .table tr td.menu{width: 295px;    padding-left: 58px;}
+.content .table tr td .delete{cursor: pointer;}
+.content .table thead{border: none;background-color: #fafafa;}
+.content .table tbody tr{border: 1px solid #ccc; border-top: none;}
+
+.content .table tbody tr td input:focus{outline: none;}
+.content .table tbody tr td .span{margin-left: 84px;font-size: 12px;color: #999; margin-bottom: 30px;
+ display: block;}
+.content .table tbody tr td.active{text-align: center;background-color: white;}
+.content .table tbody tr td em{ margin-top: 21px; display: block;color: #666;font-size: 16px;font-style: normal;}
+.content .table tbody tr td button{/*margin-top: 21px;*/border:1px solid #ccc;background-color: white;
+width: 26px;height: 26px;}
+.content .table tbody tr td input{    width: 35px;padding-left: 8px;}
+.content .table tbody tr td input:focus{outline: none;}
+.content .table tbody tr td button:focus{outline: none;}
+.content .table tbody tr td i{ margin-top: 21px; display: block;font-size: 16px;color: #ff3333;font-style: normal;}
+.content .table tbody tr td .img{margin-top:21px;cursor: pointer;}
+.table>thead>tr>th{border: none;}
+.content .table tbody tr td .picked{margin-top:30px;}
+
+
+.content .table .box .span{ display: block; margin-top: -25px; margin-left: 25px;}*/
+.content .bottom{margin-top: 20px; background-color: #fafafa;overflow: hidden;padding-left: 10px;overflow: hidden;}
+.content .bottom .left{float: left;margin-top: 10px;    padding-left: 10px;}
+.content .bottom .left .box{ margin-top: -25px; margin-left: 20px;}
+.content .bottom .left .span{margin-left: 5px;}
+.content .bottom .left a{font-size: 16px;color: #666;text-decoration: none;}
+.content .bottom .left a.first{margin-left: 15px;margin-right: 8px;border-right: 2px solid #666;padding-right:10px;}
+.content .bottom .right{float: right;}
+.content .bottom .right span{font-size: 16px;color: #666;}
+.content .bottom .right i{font-size: 18px;color: #ff3333;font-style: normal;}
+.content .bottom .right em{font-size: 20px;color: #ff3333;font-style: normal;}
+.content .bottom .right button{background-color: #ff3333;color: white;font-size: 24px;padding: 5px 10px;
+border: none;margin-top: 0;}
+.content .bottom .right button:focus{outline: none;}
+
+.page{overflow: hidden;margin-left: 18%; margin-bottom: 40px; margin-top:95px;}
+.page ul li{margin-left: 10px;list-style: none;float: left;width: 30px;height: 30px;border: 1px solid #ccc;
+padding-top: 3px; text-align: center;}
+.page ul li.on{border: 1px solid red;}
+.page ul li.on a{color: red;}
+.page ul li.prev{width: 100px;}
+.page ul li.next{width: 100px;}
+.page ul li:hover{border: 1px solid red;}
+.page ul li:hover a{color: red;}
+.page ul li a{text-decoration: none;font-size: 16px;color: #666;}
+.page ul li.last{width: 145px;padding-top: 0;border: none;}
+.page ul li.last:hover{border: none;}
+.page ul li.last:hover a{color: #666;}
+.page ul li input{width: 30px;height: 30px;}
+.page ul li input:focus{outline: none;}
+.guess{overflow: hidden;    margin-left: -13px;}
+
+.guess{overflow: hidden;    margin-left: -13px;}
+.guess .top{overflow: hidden;}
+.guess .left{float: left;font-size: 18px; color: #666;font-weight: bold;}
+.guess .right{float: right;text-decoration: none;color: #666;}
+.guess .matter>ul{overflow: hidden;margin-top: 15px; }
+.guess ul li{list-style: none;float: left;width: 384px; }
+.guess ul li:nth-child(1){margin-left: -39px;}
+.guess ul li .img{width: 98%;}
+.guess ul li span.price{color: #ff3333;font-size: 24px;margin-top:12px; display: inline-block;}
+.guess ul li span.sail{color: #666;font-size: 12px;margin-top: 12px; display: inline-block;}
+.guess ul li s{color: #666;font-size: 12px;}
+.guess ul li i.num{color: #3399cc;font-size: 12px;font-style: normal;}
+.guess ul li em.te{font-style: normal;font-size: 14px;color: white;padding: 2px 5px;
+	background-color: #ff7272;}
+.guess ul li em.pin{color: #666;font-size: 12px;margin-left:20px;font-style: normal;}
+.guess ul li p{font-size: 14px;color: #666;margin-top: 10px;}
+.guess ul li .detail{overflow: hidden;width: 360px;line-height: 34px; margin-top: 10px; }
+.guess ul li .detail ul{overflow: hidden;}
+.guess ul li .detail ul li{list-style: none;float: left;width:90px;border:1px solid #ccc;padding: 0 8px;
+	text-align: center;}
+.guess ul li .detail ul li:nth-child(3){width: 178px;}
+.guess ul li .detail ul li:hover{border:1px solid #ccc;}
+.guess ul li .detail ul li span.fang{width: 15px;height: 15px;border:1px solid #ccc; display: inline-block;}
+.guess ul li .detail ul li img{width: 20px;height: 20px;margin-top: 5px;margin-bottom: 7px;}
+.guess ul li .detail ul li a{text-decoration: none;color: #666;}
+.guess ul li .detail ul li a.join{color: #666;}
+
+.content .contact{overflow: hidden; margin-top: 15px;margin-bottom: 50px; }
+.content .contact ul{overflow: hidden;    margin-left: -15px;}
+.content .contact ul li{float: left;list-style:none;margin-top: 11px;margin-left:71px;}
+.content .contact ul li:nth-child(1){margin-top: 0;margin-left: 0;}
+.content .contact ul li:nth-child(7){margin-left: 154px;margin-top: -10px;text-align: center;}
+.content .contact ul li p{font-size: 16px ;color: #666; margin-top: 10px;}
+.content .contact ul li span{font-size: 18px;color: #dc0201;}
+.content .contact ul li i{font-size: 14px; color: #666;font-style: normal;display: block;}
+.content .contact ul li a{text-decoration: none;font-size: 12px;color: #999;display: block;margin-top: 6px;}
+
+.duigou{background: url(../images/duigou-1.png) no-repeat;/*background-position: 5px 35px;*/}
+
+
+
+
+
+
+
+

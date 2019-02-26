@@ -1,0 +1,39 @@
+.header{overflow: hidden;}
+.header h2{display: inline-block;font-size: 24px;color: #666;margin-left: 25px;margin-top: 30px;}
+.header .left{margin-top: 25px;float: left;}
+.header .left img{width: 100%;}
+h3{font-size: 24px;color: #666;font-weight: bold;;}
+.header .right{float: left;padding-top:20px;border:1px solid #ccc;width:30%;margin-top:52px;margin-left: 50px;
+width: 458px;}
+.header .right .input{ width: 100%; margin-top: 25px;line-height: 33px;padding-left: 26px; border: 1px solid #ccc;}
+.header .right .input:focus{    outline: none;}
+.header .right .first{background: url(../images/account.png) no-repeat; background-position: 6px 6px;}
+.header .right .second{background: url(../images/lock.png) no-repeat; background-position: 6px 6px;}
+
+.header .right .icon{width: 50%;line-height: 33px;margin-top: 25px;padding-left: 8px; border: 1px solid #ccc;}
+.header .right .icon:focus{outline: none;}
+.header .right #vCode{width:100px;height: 40px;border: 1px solid white; display: inline-block;
+   margin-bottom: -15px;margin-left: 5px;}
+.header .right .checkbox input{cursor: pointer;}
+.header .right .checkbox a{text-decoration: none;float: right;font-size: 14px;color: #7388d9;}
+.header .right button{width: 424px;line-height: 33px;background-color: red;color: white;border: none;}
+.header .right button:focus{outline: none;}
+.header .right a{text-decoration: none;color: #666 ;font-size: 14px;float: right;margin-top: 10px;margin-bottom: 10px;}
+
+.content .red{ overflow: hidden;margin-top: 15px;border-bottom: 1px solid #e5e5e5;}
+.content .red ul{overflow: hidden;margin-left: -125px;}
+.content .red ul li{float: left;list-style: none; margin-left: 113px;text-align: center;}
+.content .red ul li p{margin-top: 10px;color: #666;font-size: 14px;}
+
+.content .contact{overflow: hidden; margin-top: 15px;margin-bottom: 50px;}
+.content .contact ul{overflow: hidden;    margin-left: -15px;}
+.content .contact ul li{float: left;list-style:none;margin-top: 11px;margin-left:71px;}
+.content .contact ul li:nth-child(1){margin-top: 0;margin-left: 0;}
+.content .contact ul li:nth-child(7){margin-left: 154px;margin-top: -10px;text-align: center;}
+.content .contact ul li p{font-size: 16px ;color: #666; margin-top: 10px;}
+.content .contact ul li span{font-size: 18px;color: #dc0201;}
+.content .contact ul li i{font-size: 14px; color: #666;font-style: normal;display: block;}
+.content .contact ul li a{text-decoration: none;font-size: 12px;color: #999;display: block;margin-top: 6px;}
+
+
+

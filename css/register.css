@@ -1,0 +1,22 @@
+.header .top .c2{margin-top: 32px;float: right;}
+.header .top img{margin-top: 5px;}
+.header .top a{color: #7e89d0;font-size: 14px;text-decoration: none;}
+.content .new h2{font-size: 24px;color: #666;text-align: center;margin-top: 50px;}
+.content .new .c12{margin-top: 20px;text-align: center;}
+.content .new .c12 input{width: 35%;padding-left: 6px;}
+.content .new .c12 input:focus{outline: none;}
+.content .new .c12 .first{margin-left: 15px;}
+.content .new .c12 .first:focus{outline: none;}
+.content .new .c12 .last{margin-left: 15px;width: 18%;}
+.content .new .c12 .last:focus{outline: none;}
+.content .new .c12 button{background-color: red; color: white;border: none;line-height: 24px;padding: 1px 49px;
+font-size: 18px;}
+.content .new .c12 button:focus{outline: none;}
+.content .new .checkbox{ margin-left: 36%;}
+.content .new .checkbox a{text-decoration: none;color: #666;font-size: 14px;}
+.content .new .checkbox input{cursor: pointer;/*background: url(../images/duigou-1.png) no-repeat;*/}
+.content .now button{background-color: red;color: white;font-size: 18px;width: 160px;line-height: 33px;border: none;}
+.content .now{text-align: center;    margin-top: 30px;margin-bottom: 30px;}
+.content .now button:focus{outline: none;}
+
+.active{background: url(../images/duigou-1.png) no-repeat; background-position: 5px 5px;}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+	.zan{background: url(images/kuang.png) no-repeat;/*background-position: 0 15px;*/}
+</style>
+	<div class="container">
+		<table class="table">
+			<thead>
+				<tr>
+					<th><div class="box"><img src="images/a.png">全选</div></th>
+					<th>商品</th>
+					<th>单价</th>
+					<th>数量</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><div class="box"><img src="images/a.jpg">单选</div></td>
+					<td>啥事</td>
+					<td>￥123</td>
+					<td>31</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$(".box").on("click",function(){
+				if($(".box").hasClass("zan")){
+					$(".box").removeClass("zan")
+				}else{
+					$(".box").addClass("zan")
+				}
+			})
+		})
+	</script>
+</body>
+</html>
